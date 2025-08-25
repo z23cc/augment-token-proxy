@@ -1,0 +1,15 @@
+name = "augment-token-proxy"
+main = "workers/token-proxy.ts"
+compatibility_date = "2024-12-01"
+
+[vars]
+ALLOWED_ORIGINS = "aug.z23.cc"
+TENANT_URL_WHITELIST = "aug,av,az,au,at,apa,an,ad"
+
+[observability]
+enabled = true
+
+[[rules]]
+type = "Text"
+globs = ["**/*.html"]
+
